@@ -1,19 +1,30 @@
-cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 3.23)
 project(graph-puzzle-game-selimsandal)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
-add_library(graph-puzzle-game-selimsandal Array/Graph/Graph.cpp Array/Graph/Graph.h General/AbstractGraph.cpp
-        General/AbstractGraph.cpp General/Path.cpp General/Path.h Array/DisjointSet.cpp Array/DisjointSet.h
-        Array/Element.h Array/Element.cpp Array/Hash.cpp Array/Hash.h Array/Queue.h Array/Queue.cpp
-        Array/Set.cpp Array/Set.h Array/Stack.h Array/Stack.cpp Array/Heap/DHeap.cpp Array/Heap/DHeap.h
-        Array/Heap/Heap.cpp Array/Heap/Heap.h Array/Heap/HeapNode.cpp Array/Heap/HeapNode.h Array/Heap/MaxDHeap.cpp
-        Array/Heap/MaxDHeap.h Array/Heap/MaxHeap.cpp Array/Heap/MaxHeap.h Array/Heap/MinDHeap.cpp Array/Heap/MinDHeap.h
-        Array/Heap/MinHeap.cpp Array/Heap/MinHeap.h Tree/Tree.cpp Tree/Tree.h Tree/TreeNode.cpp Tree/TreeNode.h
-        List/Graph/Edge.cpp List/Graph/Edge.h List/Graph/EdgeList.cpp List/Graph/EdgeList.h List/DoublyLinkedList.h
-        List/DoublyLinkedList.cpp List/DoublyNode.h List/DoublyNode.cpp List/Hash.h List/Hash.cpp List/LinkedList.h
-        List/LinkedList.cpp List/Node.h List/Node.cpp List/Queue.cpp List/Queue.h List/Stack.cpp List/Stack.h
-        Tree/Queue.h Tree/Queue.cpp Tree/Stack.h Tree/Stack.cpp Tree/Element.h Tree/Element.cpp)
+add_library(Exam_CPP src/Array/Graph/Graph.cpp src/Array/Graph/Graph.h src/General/AbstractGraph.cpp
+        src/General/AbstractGraph.cpp src/General/Path.cpp src/General/Path.h src/Array/DisjointSet.cpp src/Array/DisjointSet.h
+        src/Array/Element.h src/Array/Element.cpp src/Array/Hash.cpp src/Array/Hash.h src/Array/Queue.h src/Array/Queue.cpp
+        src/Array/Set.cpp src/Array/Set.h src/Array/Stack.h src/Array/Stack.cpp src/Array/Heap/DHeap.cpp src/Array/Heap/DHeap.h
+        src/Array/Heap/Heap.cpp src/Array/Heap/Heap.h src/Array/Heap/HeapNode.cpp src/Array/Heap/HeapNode.h src/Array/Heap/MaxDHeap.cpp
+        src/Array/Heap/MaxDHeap.h src/Array/Heap/MaxHeap.cpp src/Array/Heap/MaxHeap.h src/Array/Heap/MinDHeap.cpp src/Array/Heap/MinDHeap.h
+        src/Array/Heap/MinHeap.cpp src/Array/Heap/MinHeap.h src/Tree/Tree.cpp src/Tree/Tree.h src/Tree/TreeNode.cpp src/Tree/TreeNode.h
+        src/List/Graph/Edge.cpp src/List/Graph/Edge.h src/List/Graph/EdgeList.cpp src/List/Graph/EdgeList.h src/List/DoublyLinkedList.h
+        src/List/DoublyLinkedList.cpp src/List/DoublyNode.h src/List/DoublyNode.cpp src/List/Hash.h src/List/Hash.cpp src/List/LinkedList.h
+        src/List/LinkedList.cpp src/List/Node.h src/List/Node.cpp src/List/Queue.cpp src/List/Queue.h src/List/Stack.cpp src/List/Stack.h
+        src/Tree/Queue.h src/Tree/Queue.cpp src/Tree/Stack.h src/Tree/Stack.cpp src/Tree/Element.h src/Tree/Element.cpp src/List/Graph/Graph.cpp
+        src/List/Graph/Graph.h src/List/Graph/Edge.cpp src/List/Graph/Edge.h src/List/Graph/EdgeList.cpp src/List/Graph/EdgeList.h)
 
-add_executable(main main.cpp)
-target_link_libraries(main graph-puzzle-game-selimsandal)
+add_executable(main src/Array/Graph/Graph.cpp src/Array/Graph/Graph.h src/General/AbstractGraph.cpp
+        src/General/AbstractGraph.cpp src/General/Path.cpp src/General/Path.h src/Array/DisjointSet.cpp src/Array/DisjointSet.h
+        src/Array/Element.h src/Array/Element.cpp src/Array/Hash.cpp src/Array/Hash.h src/Array/Queue.h src/Array/Queue.cpp
+        src/Array/Set.cpp src/Array/Set.h src/Array/Stack.h src/Array/Stack.cpp src/Array/Heap/DHeap.cpp src/Array/Heap/DHeap.h
+        src/Array/Heap/Heap.cpp src/Array/Heap/Heap.h src/Array/Heap/HeapNode.cpp src/Array/Heap/HeapNode.h src/Array/Heap/MaxDHeap.cpp
+        src/Array/Heap/MaxDHeap.h src/Array/Heap/MaxHeap.cpp src/Array/Heap/MaxHeap.h src/Array/Heap/MinDHeap.cpp src/Array/Heap/MinDHeap.h
+        src/Array/Heap/MinHeap.cpp src/Array/Heap/MinHeap.h src/Tree/Tree.cpp src/Tree/Tree.h src/Tree/TreeNode.cpp src/Tree/TreeNode.h
+        src/List/Graph/Edge.cpp src/List/Graph/Edge.h src/List/Graph/EdgeList.cpp src/List/Graph/EdgeList.h src/List/DoublyLinkedList.h
+        src/List/DoublyLinkedList.cpp src/List/DoublyNode.h src/List/DoublyNode.cpp src/List/Hash.h src/List/Hash.cpp src/List/LinkedList.h
+        src/List/LinkedList.cpp src/List/Node.h src/List/Node.cpp src/List/Queue.cpp src/List/Queue.h src/List/Stack.cpp src/List/Stack.h
+        src/Tree/Queue.h src/Tree/Queue.cpp src/Tree/Stack.h src/Tree/Stack.cpp src/Tree/Element.h src/Tree/Element.cpp src/main.cpp src/List/Graph/Graph.cpp
+        src/List/Graph/Graph.h src/List/Graph/Edge.cpp src/List/Graph/Edge.h src/List/Graph/EdgeList.cpp src/List/Graph/EdgeList.h)
