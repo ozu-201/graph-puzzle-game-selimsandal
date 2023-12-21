@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.25)
-project(main)
+project(graph-puzzle-game-selimsandal)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(Exam_CPP Array/Graph/Graph.cpp Array/Graph/Graph.h General/AbstractGraph.cpp
+add_library(graph-puzzle-game-selimsandal Array/Graph/Graph.cpp Array/Graph/Graph.h General/AbstractGraph.cpp
         General/AbstractGraph.cpp General/Path.cpp General/Path.h Array/DisjointSet.cpp Array/DisjointSet.h
         Array/Element.h Array/Element.cpp Array/Hash.cpp Array/Hash.h Array/Queue.h Array/Queue.cpp
         Array/Set.cpp Array/Set.h Array/Stack.h Array/Stack.cpp Array/Heap/DHeap.cpp Array/Heap/DHeap.h
@@ -15,6 +15,5 @@ add_library(Exam_CPP Array/Graph/Graph.cpp Array/Graph/Graph.h General/AbstractG
         List/LinkedList.cpp List/Node.h List/Node.cpp List/Queue.cpp List/Queue.h List/Stack.cpp List/Stack.h
         Tree/Queue.h Tree/Queue.cpp Tree/Stack.h Tree/Stack.cpp Tree/Element.h Tree/Element.cpp)
 
-
 add_executable(main main.cpp)
-target_link_libraries(main Exam_CPP)
+target_link_libraries(main graph-puzzle-game-selimsandal)

@@ -8,6 +8,7 @@
 
 #include "EdgeList.h"
 #include "../../General/AbstractGraph.h"
+#include "iostream"
 
 namespace list {
 
@@ -23,6 +24,7 @@ namespace list {
         Path* bellmanFord(int source);
         Path* dijkstra(int source);
         void prim();
+        //std::vector getNeighbors(int vertex);
     protected:
         void depthFirstSearch(bool* visited, int fromNode) override;
         void breadthFirstSearch(bool* visited, int startNode) override;
