@@ -24,7 +24,7 @@ namespace list {
         Path* bellmanFord(int source);
         Path* dijkstra(int source);
         void prim();
-        //std::vector getNeighbors(int vertex);
+        //std::vector getNeighbors(int vertex); //change this, add implementation
     protected:
         void depthFirstSearch(bool* visited, int fromNode) override;
         void breadthFirstSearch(bool* visited, int startNode) override;
